@@ -1,0 +1,152 @@
+
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "nightscout",
+            "intents": [
+                {
+                    "name": "NSStatus",
+                    "slots": [],
+                    "samples": [
+                        "How am I doing"
+                    ]
+                },
+                {
+                    "name": "UploaderBattery",
+                    "slots": [],
+                    "samples": [
+                        "How is my uploader battery"
+                    ]
+                },
+                {
+                    "name": "PumpBattery",
+                    "slots": [],
+                    "samples": [
+                        "How is my pump battery"
+                    ]
+                },
+                {
+                    "name": "LastLoop",
+                    "slots": [],
+                    "samples": [
+                        "When was my last loop"
+                    ]
+                },
+                {
+                    "name": "MetricNow",
+                    "slots": [
+                        {
+                            "name": "metric",
+                            "type": "LIST_OF_METRICS"
+                        },
+                        {
+                            "name": "pwd",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "What is my {metric}",
+                        "What my {metric} is",
+                        "What is {pwd} {metric}"
+                    ]
+                },
+                {
+                    "name": "InsulinRemaining",
+                    "slots": [
+                        {
+                            "name": "pwd",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "How much insulin do I have left",
+                        "How much insulin do I have remaining",
+                        "How much insulin does {pwd} have left",
+                        "How much insulin does {pwd} have remaining"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_METRICS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "bg"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "blood glucose"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "number"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "iob"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "insulin on board"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "current basal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "basal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cob"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "carbs on board"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "carbohydrates on board"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "loop forecast"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ar2 forecast"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "forecast"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "raw bg"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "raw blood glucose"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
